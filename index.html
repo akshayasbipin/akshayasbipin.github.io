@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- here is the heading part -->
+    <header class="header">
+        <a href="#" class="logo"><span>Akshaya</span> S Bipin</a>
+        <nav class="navbar">
+            <a href="#home-ref" class="active">Home</a>
+            <a href="#education" class="active">Education</a>
+            <a href="#skills" class="active">Skills</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+    </header>
+
+    <div class="container">
+<!-- here i need to add stuff about me -->
+    <section class="home" id="home-ref">
+        <div class="home-content">
+            <h3>Hi, </h3>
+            <h1>I'm <span>Akshaya</span></h1> 
+            <!-- <h1>a piece of shoot developer</h1> -->
+            <p>I'm currently studying Computer Science and Engineering at BVRITH, 
+                aiming to become a software developer. I love coding and exploring new tech. Outside of tech, 
+                I enjoy yoga, reading, drawing, and animating. Creativity and innovation drive me forward, and resilience keeps me going.
+                I'm enthusiastic about applying my skills to the dynamic world of technology.
+            I firmly believe in the quote attributed to Groot, from Marvel Comics Universe:</p>
+            <p style="font-style: italic;">Growth is growth, no matter how small</p>
+    
+<!-- here is a way to contact me     -->
+        <div class="social-icon">
+            <h3>Let's connect...</h3>
+            <a href="https://www.linkedin.com/in/akshaya-s-bipin/"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/Akshaya21513"><i class='bx bxl-github' ></i></a>
+        </div>
+        </div>
+<!-- my pic -->
+        <div class="img-box">
+            <img src="image.jpg" alt="Just me">
+        </div>
+    </section>
+
+
+<!-- use this for education -->
+    <section class="about" id="education">
+        <div class="about-content">
+            <h2 class="heading" text-align="left">My <span> Education</span></h2>
+            <div class = "edu-div">
+                <img class = "edu-img" src="bvrith.jpeg" alt="BVRITH">
+                <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                <p>BVRIT Hyderabad College of Engineering for Women, Hyderabad, India</p>
+                <p>June 2021 - June 2025</p>
+            </div>
+        </div>
+    </section>
+
+<!-- use this for skills -->
+    <section id="skills" style="background-color: rgb(207, 231, 207);">
+        <h2>Skills</h2>
+        <div class="skill-category-container">
+            <div class="skill-category">
+                <table border="3" style="border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Programming Language</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="skill-category">
+                <table border="3" style="border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Skills and Web Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Algorithms and Data Structures</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="skill-category">
+                <table border="3" style="border-collapse: collapse;" >
+                    <thead>
+                        <tr>
+                            <th>Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Eclipse</td>
+                        </tr>
+                        <tr>
+                            <td>NetBeans</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>Micorsoft Office</td>
+                        </tr>
+                        <tr>
+                            <td>PowerBI</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+        </div>
+    
+        
+    </section>
+
+    <section  id="projects" style="background-color: rgb(172, 208, 172);" >
+        <!-- use this for Projects -->
+        <h2 align="center">Projects</h2>
+        <div class="image-gallery">
+        <div>
+            <figure>
+                <img src="SpendingTracker.jpeg" width="400" height="300" alt="Spending Tracker">
+                <figcaption>Budget Management App using Java</figcaption>
+            </figure>
+            <details>
+                <summary>Budget Management App using Java👇🏽👇🏿</summary>
+                <p>Developed a Budget Management App using Java integrated with MySQL database for efficient spending tracking and analysis</p>
+                <p>Development Environment: Implemented using Java NetBeans IDE.</p>
+                <p>Features Implemented:</p>
+                    <p>Spending Tracker: Users can view all spending.</p>
+                    <p>-Category Management: Categorization by material or date for better organization.</p>
+                    <p>-Database Integration using MySQL: Designed and implemented database schema for storing spending data efficiently. This integration facilitates user preferences in data formatting and provides insights into total spending.</p>
+                    <p>-User Interface (UI): Developed intuitive UI using Java Swing for seamless user experience.</p>
+                <p>Technologies Used: Java, Swing User Interface, SQL Server (Relational database)</p>
+            </details>
+            <p class="button-project"><a href="https://github.com/Akshaya21513/Spending-Tracker" target="_blank"><button>View Project</button></a></p>
+        </div>
+
+        <div>
+            <figure>
+                <img src="creditcard.jpeg" width="400" height="300" alt="Fraud detection">
+                <figcaption>Credit_Card-Fraud-Detection</figcaption>
+            </figure>
+            <details>
+                <summary>Credit_Card-Fraud-Detection👇🏽👇🏿</summary>
+                <p>Leveraged advanced algorithms to analyze transaction data for fraud identification.
+                Integrated real-time fraud detection for swift identification of suspicious transactions.</p>
+                <p>PROJECT PIPELINE:</p>
+                <p>-Data Understanding</p>
+                <p> -Exploratory data analytics (EDA)</p>
+                <p>-Train/Test Split</p>
+                <p>-Model-Building/Hyperparameter Tuning: here, LogisticRegression</p>
+                <p>-Model Evaluation</p>
+                <p>Libraries, packages and frameworks used: Numpy, Pandas, Scikit-learn</p>
+            </details>
+            <p class="button-project"><a href="https://github.com/Akshaya21513/Credit_Card-Fraud-Detection.git" target="_blank"><button>View Project</button></a></p>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
