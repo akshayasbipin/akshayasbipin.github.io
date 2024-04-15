@@ -212,11 +212,6 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-@media screen and (max-width: 600px) {
-    table, thead, tbody, th, td, tr { 
-        display: block; 
-}
-
 /* here are the project */
 .image-gallery div {
     clear: left;
