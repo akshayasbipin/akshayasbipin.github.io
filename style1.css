@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding: 0;
@@ -39,10 +40,6 @@
     transform: scale(1.1);
 }
 
-span{
-    color:rgb(151, 220, 141);
-}
-
 .navbar a{
     font-size:18px;
     color:white;
@@ -59,14 +56,19 @@ span{
     border-bottom: 3px solid rgb(151, 220, 141);
 }
 
+span{
+    color:rgb(127, 212, 114);
+}
+
+/* Home section styles */
 .home{
     width: 100%;
     min-height: 100vh;
     background: rgb(241, 241, 241);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 7em;
-    padding: 60px 12% 0;
+    padding: 150px 12% 0;
 }
 
 .home-content{
@@ -87,61 +89,18 @@ span{
     margin: 20px 0 13px;
 }
 
-.btn-box{
-    width: 345px;
-    display:  flex;
-    gap: 2em;
-}
-
-.btn-1{
-    padding: 5px 18px;
-    background-color: rgb(19, 28, 18);
-    color:white;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.btn-1:hover{
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-}
-
-.btn-2{
-    padding: 5px 18px;
-    background-color: rgb(72, 94, 69);
-    color:white;
-    border: 2px solid rgb(32, 46, 29);
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.btn-2:hover{
-    background-color: white;
-    color:rgb(151, 220, 141);
-}
-
 .img-box img{
-    border-radius: 60%;
+    border-radius: 50%;
     width: 300px;
     margin: 30px 0 13px;
 }
 
+/* About section styles */
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8% 8%;
-    /* gap: 10em; */
     background-color: black;
 }
 
@@ -149,9 +108,8 @@ span{
     text-align: left;
     color: white;
     font-size: 42px;
-    padding: 20px 18px
+    padding: 20px 18px;
 }
-
 
 .social-icon{
     color: rgb(85, 92, 84);
@@ -176,19 +134,9 @@ span{
     border-radius: 50%; 
 }
 
+/* Skills section styles */
 #skills {
     padding: 20px;
-}
-
-.skill-category {
-    width: calc(33.33% - 20px); 
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}
-
-.skill-category table {
-    width: 100%;
-    border-collapse: collapse;
 }
 
 .skill-category-container {
@@ -197,6 +145,16 @@ span{
     justify-content: space-between;
 }
 
+.skill-category {
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.skill-category table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
 .skill-category table thead th, .skill-category table tbody td {
     padding: 12px;
@@ -212,7 +170,7 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* here are the project */
+/* Projects section styles */
 .image-gallery div {
     clear: left;
     overflow: auto;
@@ -252,4 +210,24 @@ summary{
      border-radius: 5px;
      color:rgb(32, 46, 29) ;
      text-decoration: underline;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    /* text-decoration: none; */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
