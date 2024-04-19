@@ -210,9 +210,11 @@ summary{
      border-radius: 5px;
      color:rgb(32, 46, 29) ;
      text-decoration: underline;
-     padding: 10px;
+     /* padding: 5px; */
 }
-
+.desc{
+    padding:10px;
+}
 .btn{
     background-color: #4CAF50; /* Green */
     border: none;
@@ -222,7 +224,7 @@ summary{
     /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
-    margin: 4px 10px;
+    margin: 4px 6px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 10px;
