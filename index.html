@@ -9,14 +9,25 @@
 </head>
 <body>
 <!-- here is the heading part -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.getElementById('menu-toggle');
+            var navbar = document.getElementById('navbar');
+        
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+        </script>
     <header class="header">
         <a href="#" class="logo"><span>Akshaya</span> S Bipin</a>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#home-ref" class="active">Home</a>
-            <a href="#education" class="active">Education</a>
-            <a href="#skills" class="active">Skills</a>
-            <a href="#projects" class="active">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
         </nav>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Button to toggle the menu on mobile -->
     </header>
 
     <div class="container">
