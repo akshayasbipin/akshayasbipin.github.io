@@ -12,53 +12,115 @@
     list-style: none;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     padding: 20px 12%;
     background-color: rgba(61, 75, 51, 0.842);
     backdrop-filter: blur(10px);
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: white;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
     color: rgb(188, 218, 184);
     text-shadow: 0 0 25px rgb(188, 218, 184),
                  0 0 50px rgb(188, 218, 184);
     transform: scale(1.1);
 }
 
-.navbar a{
-    font-size:18px;
-    color:white;
+.navbar a {
+    font-size: 18px;
+    color: white;
     font-weight: 500;
     margin: 0 20px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: rgb(151, 220, 141);
     text-shadow: 0 0 25px rgb(148, 229, 138),
                  0 0 50px rgb(148, 229, 138);
     border-bottom: 3px solid rgb(151, 220, 141);
 }
 
-span{
-    color:rgb(127, 212, 114);
+span {
+    color: rgb(127, 212, 114);
 }
+
+/* Additional styles for mobile menu */
+.menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navigation links by default on small screens */
+        flex-direction: column; /* Stack the links vertically */
+        background-color: #444; /* Background color for the mobile menu */
+        position: absolute;
+        top: 60px; /* Position the menu below the header */
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex; /* Show the navigation links when the menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navigation links by default on small screens */
+        flex-direction: column; /* Stack the links vertically */
+        background-color: #3a4e3a; /* Background color for the mobile menu */
+        position: absolute;
+        top: 60px; /* Position the menu below the header */
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex; /* Show the navigation links when the menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+
 
 /* Home section styles */
 .home{
