@@ -194,11 +194,17 @@ details {
 }
 
 figure {
-    width: 480px;
-    padding: 40px;
-    display: subgrid;
-    float: left;
+    max-width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center; 
 }
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
 
 figcaption {
     text-align: center;
