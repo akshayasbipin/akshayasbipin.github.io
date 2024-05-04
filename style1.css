@@ -12,6 +12,7 @@
     list-style: none;
 }
 
+/* Existing CSS styles for the header */
 .header {
     position: fixed;
     top: 0;
@@ -62,27 +63,27 @@ span {
 
 /* Additional styles for mobile menu */
 .menu-toggle {
-    display: none; /* Hide the menu toggle button by default */
+    display: none;
 }
 
 /* Media query for small screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .navbar {
-        display: none; /* Hide the navigation links by default on small screens */
-        flex-direction: column; /* Stack the links vertically */
-        background-color: #444; /* Background color for the mobile menu */
+        display: none; 
+        flex-direction: column; 
+        background-color: #444; 
         position: absolute;
-        top: 60px; /* Position the menu below the header */
+        top: 60px; 
         left: 0;
         width: 100%;
     }
 
     .navbar.active {
-        display: flex; /* Show the navigation links when the menu is active */
+        display: flex; 
     }
 
     .menu-toggle {
-        display: block; /* Display the menu toggle button */
+        display: block; 
         color: white;
         background-color: transparent;
         border: none;
@@ -98,21 +99,21 @@ span {
 /* Media query for small screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .navbar {
-        display: none; /* Hide the navigation links by default on small screens */
-        flex-direction: column; /* Stack the links vertically */
-        background-color: #3a4e3a; /* Background color for the mobile menu */
+        display: none; 
+        flex-direction: column; 
+        background-color: #3a4e3a; 
         position: absolute;
-        top: 60px; /* Position the menu below the header */
+        top: 60px; 
         left: 0;
         width: 100%;
     }
 
     .navbar.active {
-        display: flex; /* Show the navigation links when the menu is active */
+        display: flex; 
     }
 
     .menu-toggle {
-        display: block; /* Display the menu toggle button */
+        display: block; 
         color: white;
         background-color: transparent;
         border: none;
@@ -120,7 +121,6 @@ span {
         cursor: pointer;
     }
 }
-
 
 /* Home section styles */
 .home{
@@ -252,21 +252,37 @@ tr:nth-child(even) {
 
 details {
     margin-top: 40px;
-    
+    padding-left: 20px;
 }
 
-figure {
-    max-width: 100%; 
+/* Media query for mobile */
+@media only screen and (max-width: 767px) {
+    .desc{
+        padding:10px;
+    }
+    figure {
+        width: 100%;
+        padding: 0; 
+    margin: 0; 
+    text-align: center;
+    }
+}
+
+/*on desktop*/
+@media only screen and (min-width: 768px){
+    .desc{
+        padding:10px;
+        display: flex;
+    }
+ figure {
+   width: 400px;
     padding: 0; 
     margin: 0; 
     text-align: center; 
+    display: subgrid;
 }
 
-img {
-    max-width: 100%; 
-    height: auto; 
 }
-
 
 figcaption {
     text-align: center;
@@ -274,22 +290,19 @@ figcaption {
 }
 
 summary{
-     cursor: pointer; /*interactive cursor */
+    padding-left: 20px;
+     cursor: pointer; 
      border-radius: 5px;
      color:rgb(32, 46, 29) ;
      text-decoration: underline;
-     /* padding: 5px; */
-}
-.desc{
-    padding:10px;
-}
+} 
+
 .btn{
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 1px 10px;
     text-align: center;
-    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
     margin: 4px 6px;
@@ -299,6 +312,6 @@ summary{
 }
 
 .btn:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049; 
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
