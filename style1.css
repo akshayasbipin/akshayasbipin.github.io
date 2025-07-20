@@ -28,6 +28,13 @@
     z-index: 100;
 }
 
+p{
+  font-family: "Roboto Mono", monospace;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+}
+
 .logo {
     font-size: 25px;
     color: white;
@@ -128,9 +135,8 @@ span {
 
 /* Home section styles */
 .home{
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(241, 241, 241);
+    position: relative;
+    background-image: url('./images/2206_w019_n002_621b_p15_621.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,17 +148,24 @@ span {
 }
 
 .home-content h3{
+    padding: 5px;
     font-size: 35px;
+    font-family: "Cutive", serif;
 }
 
 .home-content h1{
+    font-family: "Cutive", serif;
     font-size: 46px;
     line-height: 1.2;
 }
 
 .home-content p{
+    border-bottom: 2px solid black;
     font-size: 15px;
     margin: 20px 0 13px;
+    background-image: repeating-linear-gradient(to bottom, #6699cc 1px, #ffffff 1px, #ffffff 40px);
+    background-size: 100% 41px; /* 1px line + 40px spacing */
+    padding: 20px;
 }
 
 .img-box img{
@@ -190,6 +203,7 @@ span {
 .edu-div h3 {
     margin-left: 110px;
     color: white;
+    font-family: "Cutive", serif;
 }
 
 .about-exp{
@@ -226,6 +240,7 @@ span {
 .exp-div h3 {
     margin-left: 110px;
     color:  #001AFF;
+    font-family: "Cutive", serif;
 }
 
 .skill-badge {
@@ -255,6 +270,7 @@ span {
 .exp-tm-div h3 {
     margin-left: 110px;
     color:  #004165;
+    font-family: "Cutive", serif;
 }
 
 
@@ -297,6 +313,7 @@ span {
   margin-bottom: 10px;
   border-bottom: 2px solid #E3F2FD;
   padding-bottom: 5px;
+  font-family: "Cutive", serif;
 }
 
 .skill-card ul {
@@ -387,6 +404,7 @@ span {
   font-size: 1.3rem;
   color: #C2185B;
   margin-bottom: 8px;
+  font-family: "Cutive", serif;
 }
 
 .project-short {
