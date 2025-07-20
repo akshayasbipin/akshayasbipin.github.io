@@ -163,7 +163,7 @@ span {
     border-bottom: 2px solid black;
     font-size: 15px;
     margin: 20px 0 13px;
-    background-image: repeating-linear-gradient(to bottom, #6699cc 1px, #ffffff 1px, #ffffff 40px);
+    background-image: repeating-linear-gradient(to bottom, #6699cc 1px, #F9F9E0 1px, #ebebd2 40px);
     background-size: 100% 41px; /* 1px line + 40px spacing */
     padding: 20px;
 }
