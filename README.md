@@ -6,7 +6,7 @@
 <p>Here's a preview:</p>
 <table>
   <tr>
-    <td><img src="sam1.png"></td>
-    <td><img src="sam2.png"></td>
+    <td><img src="./images/sam1.png"></td>
+    <td><img src="./images/sam2.png"></td>
   </tr>
 </table>
