@@ -348,6 +348,7 @@ span {
 
 .projects-section {
   background-color: #FAFAFA;
+  /* background-image: url('./images/book_page.jpg'); */
   padding: 60px 20px;
   text-align: center;
 }
@@ -362,7 +363,8 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  background-image: url('./images/book_page.jpg');
   border-radius: 16px;
   gap: 1.5rem;
   width: 100%;
@@ -380,7 +382,7 @@ span {
 }
 
 .project-card {
-  background-color: #fff; /* or a soft card background */
+  background-color: #F9F9E0; /* or a soft card background */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
