@@ -168,11 +168,57 @@ span {
     padding: 20px;
 }
 
-.img-box img{
-    border-radius: 50%;
-    width: 300px;
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 30px 0 13px;
 }
+
+.img-box img {
+    width: 300px;
+    height: 380px;
+    border-radius: 50% / 45%;
+    object-fit: cover;
+    border: 6px solid pink;
+    transition: 
+        border 0.4s ease, 
+        transform 0.3s ease, 
+        box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Desktop hover effect */
+.img-box img:hover {
+    border: 6px solid;
+    border-image: linear-gradient(135deg, #ff80ab, #ff4081, #f50057, #ff80ab) 1;
+    border-image-slice: 1;
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Tap feedback for mobile */
+.img-box img:active {
+    border: 6px solid;
+    border-image: linear-gradient(135deg, #ff80ab, #ff4081, #f50057, #ff80ab) 1;
+    border-image-slice: 1;
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Always show gradient border on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .img-box img {
+        border: 6px solid;
+        border-image: linear-gradient(135deg, #ff80ab, #ff4081, #f50057, #ff80ab) 1;
+        border-image-slice: 1;
+    }
+}
+
+
+
+
 
 /* About section styles */
 .about{
