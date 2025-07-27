@@ -211,14 +211,11 @@ span {
 @media (hover: none) and (pointer: coarse) {
     .img-box img {
         border: 6px solid;
+         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
         border-image: linear-gradient(135deg, #ff80ab, #ff4081, #f50057, #ff80ab) 1;
         border-image-slice: 1;
     }
 }
-
-
-
-
 
 /* About section styles */
 .about{
@@ -338,6 +335,12 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
+}
+
+.skill-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .skill-card {
