@@ -207,6 +207,13 @@ span {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
 
+figcaption {
+    font-family: "Cutive", serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+
 /* Always show gradient border on touch devices */
 @media (hover: none) and (pointer: coarse) {
     .img-box img {
