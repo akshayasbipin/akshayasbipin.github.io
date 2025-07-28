@@ -211,7 +211,8 @@ figcaption {
     font-family: "Cutive", serif;
     text-align: center;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 20px;
+    color: #C2185B;
 }
 
 /* Always show gradient border on touch devices */
