@@ -143,6 +143,30 @@ span {
     padding: 80px 12% 0;
 }
 
+/* .home-content{
+    max-width:500px;
+}
+
+.home-content h3{
+    padding: 5px;
+    font-size: 35px;
+    font-family: "Cutive", serif;
+}
+
+.home-content h1{
+    font-family: "Cutive", serif;
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    border-bottom: 2px solid black;
+    font-size: 15px;
+    margin: 20px 0 13px;
+    background-image: repeating-linear-gradient(to bottom, #6699cc 1px, #F9F9E0 1px, #ebebd2 40px);
+    background-size: 100% 41px; 
+    padding: 20px;
+} */
 .home-content{
     max-width:500px;
 }
@@ -166,6 +190,81 @@ span {
     background-image: repeating-linear-gradient(to bottom, #6699cc 1px, #F9F9E0 1px, #ebebd2 40px);
     background-size: 100% 41px; /* 1px line + 40px spacing */
     padding: 20px;
+    line-height: 1.6;
+}
+
+/* --- Geronimo Stilton fun styles --- */
+.fun {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.3rem;
+    color: #ff5733;
+    font-weight: bold;
+}
+.explore {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.1rem;
+    color: #008080;
+    font-style: italic;
+}
+.ai {
+    font-family: 'Courier New', monospace;
+    background: #f4d03f;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.ml {
+    font-family: 'Georgia', serif;
+    color: #5d3fd3;
+    font-weight: bold;
+}
+.calm {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.2rem;
+    color: #2e8b57;
+}
+.book {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #8b0000;
+}
+.art {
+    font-style: italic;
+    color: #ff69b4;
+}
+.animate {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    color: #ff8c00;
+}
+.bold {
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+}
+.bright {
+    font-weight: bold;
+    color: #1e90ff;
+    font-style: italic;
+}
+.strong {
+    font-family: 'Impact', sans-serif;
+    color: #4b0082;
+    font-size: 1.3rem;
+}
+.wow {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    color: #ff1493;
+    text-decoration: underline wavy #ff1493;
+}
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #444;
+    border-left: 3px solid #aaa;
+    padding-left: 10px;
+    margin-top: 15px;
 }
 
 
