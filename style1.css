@@ -485,6 +485,7 @@ figcaption {
 }
 
 .tool-icons {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -627,11 +628,18 @@ details ul {
 
 /* This is for Links */
 /* I reused .about{} */
-.link-div{
-    color: white;
+/* Responsive links section */
+.link-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white; /* from your original */
 }
 
-.link{
+.link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -639,9 +647,35 @@ details ul {
     background-color: black;
 }
 
-.link-div a{
-    margin-left: 110px;
-    font-size: large;
-    color: rgb(255, 255, 255);
+.link-div a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: large; /* from your original */
+    font-size: 1.1em; /* responsive font size */
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* from your original */
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    margin-left: 0; /* override margin for flex layout */
 }
 
+.link-div a:hover {
+    background: #f0f0f0;
+    color: #252525;
+}
+
+@media (max-width: 600px) {
+    .link-div {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+    .link-div a {
+        font-size: 1em;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
