@@ -13,6 +13,7 @@ export const socials = [
   { name: 'GitHub', url: 'https://github.com/akshayasbipin' },
   // { name: 'Instagram', url: 'https://www.instagram.com/shy_milkshake_void/' },
   { name: 'LeetCode', url: 'https://leetcode.com/u/21wh1a0513/' },
+  { name: 'Medium', url:'https://medium.com/@akshayasbipin' },
 ]
 
 export const education = [
