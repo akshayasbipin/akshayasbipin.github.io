@@ -10,3 +10,7 @@
     <td><img src="./images/sam2.png"></td> -->
   </tr>
 </table>
+
+
+npm install gh-pages --save-dev
+npm run deploy
