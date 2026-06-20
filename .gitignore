@@ -1,0 +1,5 @@
+old_portfolio
+node_modules
+dist
+.DS_Store
+README_instructions.md
