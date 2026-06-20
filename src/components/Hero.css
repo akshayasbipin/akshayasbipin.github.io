@@ -1,0 +1,113 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 140px;
+  min-height: 90vh;
+}
+
+.hero__text {
+  max-width: 540px;
+}
+
+.hero__hi {
+  font-family: var(--font-hand);
+  font-size: 28px;
+  /* color: var(--ink-soft); */
+  color: var(--paper);
+}
+
+.hero__name {
+  font-size: 64px;
+  color: var(--coral);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.hero__bio {
+  font-size: 16px;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--line);
+  padding-left: 16px;
+  color: var(--paper);
+}
+
+.hero__bio strong {
+  color: var(--sky);
+}
+
+/* a notebook-style sticky quote, slightly tilted like it was
+   taped on by hand rather than perfectly centered */
+.hero__quote {
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: var(--paper-deep);
+  border-radius: 4px 16px 4px 16px;
+  font-family: var(--font-hand);
+  font-size: 22px;
+  color: var(--ink);
+  transform: rotate(-1.5deg);
+  box-shadow: 2px 3px 0 var(--line);
+}
+
+.hero__quote cite {
+  display: block;
+  font-size: 15px;
+  font-style: normal;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+.hero__socials {
+  margin-top: 28px;
+}
+
+.hero__socials p {
+  font-family: var(--font-hand);
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--paper);
+}
+
+.hero__social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero__social-links a {
+  text-decoration: none;
+  background: var(--paper-deep);
+  color: var(--ink);
+  padding: 6px 14px;
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero__social-links a:nth-child(1):hover { background: var(--sunflower); }
+.hero__social-links a:nth-child(2):hover { background: var(--lime); }
+.hero__social-links a:nth-child(3):hover { background: var(--bubblegum); }
+.hero__social-links a:hover {
+  transform: translateY(-2px);
+}
+
+.hero__photo img {
+  width: 280px;
+  height: 340px;
+  object-fit: cover;
+  border: 8px solid white;
+  outline: 2px solid var(--ink);
+  border-radius: 6px;
+  transform: rotate(2deg);
+  box-shadow: 6px 8px 0 var(--coral);
+}
+
+@media (max-width: 600px) {
+  .hero__name { font-size: 46px; }
+  .hero__photo img { width: 220px; height: 270px; }
+}

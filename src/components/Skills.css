@@ -1,0 +1,62 @@
+.skills {
+  background-color: var(--ink);
+  border-top: 10px dashed #000000;
+  border-bottom: 10px dashed #000000;
+}
+
+.skills h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: var(--paper);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skills__card {
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: transform 0.2s ease;
+}
+
+.skills__card:nth-child(odd) { transform: rotate(-1deg); }
+.skills__card:nth-child(even) { transform: rotate(1deg); }
+
+.skills__card:hover {
+  transform: rotate(0deg) translateY(-3px);
+}
+
+.skills__card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  border-bottom: 3px dashed #000000;
+  padding-bottom: 8px;
+}
+
+/* Each card gets its own accent color, like colored tabs/dividers
+   in a school notebook, instead of repeating one color everywhere. */
+.skills__card:nth-child(5n+1) h3 { color: var(--coral); }
+.skills__card:nth-child(5n+2) h3 { color: var(--sky); }
+.skills__card:nth-child(5n+3) h3 { color: var(--teal); }
+.skills__card:nth-child(5n+4) h3 { color: var(--grape); }
+.skills__card:nth-child(5n+5) h3 { color: var(--tangerine); }
+
+.skills__card ul {
+  list-style: none;
+}
+
+.skills__card li {
+  padding: 4px 0;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.skills__card li::before {
+  content: '✎ ';
+  color: var(--teal);
+}

@@ -1,0 +1,27 @@
+/* This is the part that actually fixes your layout-shift bug.
+   The original component used Tailwind classes like
+   `w-[40rem] h-full absolute top-[50%] left-[50%] ...` which:
+     - gave it a fixed width of 40rem (way smaller than the screen)
+     - positioned it `absolute`, meaning it still takes part in
+       page flow relative to the nearest positioned ancestor,
+       which can end up pushing later siblings around.
+
+   `position: fixed` + `inset: 0` (shorthand for top/right/bottom/left: 0)
+   takes it completely out of the document flow and pins it to the
+   browser viewport, so it can never affect where your other
+   components sit. `z-index: -1` puts it behind everything else. */
+.ascii-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none; /* clicks/scroll always pass through to your real content */
+}
+
+.ascii-bg__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,129 @@
+.projects h2 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--paper);
+}
+
+.projects__sub {
+  text-align: center;
+  color: #B2E4D5;
+  font-family: var(--font-hand);
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* index-card look: a torn strip of "tape" at the top */
+  position: relative;
+  box-shadow: 5px 6px 0 var(--coral);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 70px;
+  height: 22px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Cycle the washi-tape color and title color per card, so the
+   grid reads as colorful rather than one accent repeated. */
+.project-card:nth-child(4n+1)::before { background: rgba(255, 93, 93, 0.5); }   /* coral */
+.project-card:nth-child(4n+2)::before { background: rgba(63, 167, 214, 0.5); }  /* sky */
+.project-card:nth-child(4n+3)::before { background: rgba(255, 159, 69, 0.5); }  /* tangerine */
+.project-card:nth-child(4n+4)::before { background: rgba(155, 93, 229, 0.5); }  /* grape */
+
+.project-card:nth-child(4n+1) h3 { color: var(--coral); }
+.project-card:nth-child(4n+2) h3 { color: var(--sky); }
+.project-card:nth-child(4n+3) h3 { color: var(--tangerine); }
+.project-card:nth-child(4n+4) h3 { color: var(--grape); }
+
+.project-card h3 {
+  font-size: 19px;
+  font-family: var(--font-body);
+  margin-bottom: 8px;
+}
+
+.project-card__blurb {
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  margin-bottom: 12px;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.project-card__tags span {
+  font-size: 12px;
+  background: var(--paper-deep);
+  padding: 3px 9px;
+  border-radius: 12px;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.project-card__btn {
+  align-self: flex-start;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.project-card__btn:hover {
+  background: var(--coral);
+}
+
+.project-card__toggle {
+  background: none;
+  border: none;
+  color: var(--teal);
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 0;
+  font-size: 14px;
+}
+
+.project-card__details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 10px dashed var(--line);
+  list-style: none;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.project-card__details li {
+  padding: 3px 0;
+}
+
+.project-card__details li::before {
+  content: '— ';
+}

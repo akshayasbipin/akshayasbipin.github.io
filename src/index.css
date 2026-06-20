@@ -1,0 +1,93 @@
+/* ============================================
+   GLOBAL THEME — "Hand-drawn notebook" style
+   ============================================
+   Instead of one big CSS file controlling everything,
+   each component has its OWN small .css file next to it
+   (e.g. Hero.jsx + Hero.css). This file only holds the
+   stuff that should apply EVERYWHERE: colors, fonts,
+   resets. Think of it as "the paper", and each
+   component's own CSS as "the doodles on top of it".
+*/
+
+:root {
+  /* --- Color palette ---
+     Bright "colored pencils on a fresh notebook page" feel —
+     a light, slightly warm paper (not stark white, not beige-bland),
+     punchy ink for text, and a set of saturated accent colors that
+     each pull double duty across headings, tags, borders, and hovers. */
+  --paper: #fffaf0;       /* bright, warm off-white page */
+  --paper-deep: #ffeede;  /* warm peachy panel background */
+
+  --ink: #21243a;         /* deep indigo-navy, not flat black */
+  --ink-soft: #5b5e7e;    /* softer indigo-grey for body text */
+
+  --coral: #ff5d5d;       /* warm red-pink, the main accent */
+  --tangerine: #ff9f45;   /* warm orange */
+  --sunflower: #ffc93c;   /* bright yellow */
+  --lime: #6fcf7a;        /* fresh green */
+  --teal: #2bb3a3;        /* teal-green */
+  --sky: #3fa7d6;         /* bright blue */
+  --grape: #9b5de5;       /* violet/purple */
+  --bubblegum: #ff84c6;   /* pink */
+
+  --line: #FFFFFF;        /* warm dashed-border color */
+
+  --font-hand: 'Caveat', cursive;
+  --font-body: 'Nunito', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+  /* a faint paper-grain texture using two tiny gradients,
+     so the background isn't a flat dead color */
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0,0,0,0.015) 0, transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(0,0,0,0.02) 0, transparent 45%);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-hand);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+a {
+  color: var(--coral);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+/* A reusable "marker underline" you can drop under any heading.
+   Usage: <h2>Projects<span className="squiggle"></span></h2> */
+.squiggle {
+  display: block;
+  width: 110px;
+  height: 12px;
+  margin-top: 4px;
+  background: #FFFFFF;
+}
+
+/* small helper used by a few components to rotate things
+   slightly, like a sticky note someone placed by hand */
+.tilt-left  { transform: rotate(-2deg); }
+.tilt-right { transform: rotate(2deg); }
